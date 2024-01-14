@@ -35,6 +35,10 @@ p {
   margin: 0;
 }
 
+svg {
+  fill: none;
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -141,6 +145,14 @@ p {
 .main {
 }
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #2e2f42;
   padding-bottom: 188px;
   padding-top: 188px;
@@ -224,6 +236,20 @@ p {
   letter-spacing: 0.02em;
 }
 
+.advantages-icon-container {
+  display: flex;
+  align-items: cenetr;
+  margin-bottom: 8px;
+  justify-content: center;
+  padding: 24px 100px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.advantage-icon {
+}
+
 /* Team */
 
 .team {
@@ -282,6 +308,37 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.soc-icon-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-icon-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-icon-link {
+  background-color: #404bbf;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-icon-link {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+team-soc-icon {
 }
 
 /* Portfolio */
@@ -374,4 +431,39 @@ portfolio-container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.soc-footer-container {
+}
+.footer-soc-text {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  background-color: #404bbf;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon {
+}
+.soc-footer-link {
+  max-width: 100%;
+  max-height: 100%;
 }
